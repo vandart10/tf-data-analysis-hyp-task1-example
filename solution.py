@@ -13,4 +13,4 @@ def solution(x_success: int,
     p = (x_success + y_success) / (x_cnt + y_cnt)
     z = (conv1 - conv2) / np.sqrt(p * (1-p) * (1/x_cnt + 1/y_cnt))
 
-    return abs(z) > stats.norm.ppf(0.06)
+    return abs(z) > stats.norm.ppf(0.015)
